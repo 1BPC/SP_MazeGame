@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPaneES" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GameEndScreen">
+
+    <AnchorPane layoutX="328.0" layoutY="203.0" prefHeight="398.0" prefWidth="424.0" style="-fx-background-color: #FFFFFF;">
+
+        <!-- ADD BUTTON -->
+        <Button layoutX="110.0" layoutY="319.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="43.0" prefWidth="204.0" style="-fx-background-color: #43D9BD;" text="Play again" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+
+        <!-- ADD IMAGE -->
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="137.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/maze.png" />
+        </ImageView>
+
+        <!-- ADD LABEL -->
+        <Label layoutX="85.0" layoutY="227.0" text="You completed the game with">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <!-- ADD LABEL -->
+        <Label fx:id="endGameWealthLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="270.0" prefHeight="27.0" prefWidth="150.0" text="£400">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+    </AnchorPane>
+
+    <!-- ADD MENU BAR -->
+    <MenuBar layoutY="2.0" style="-fx-background-color: #43D9BD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <Menu mnemonicParsing="false" text="File">
+        <MenuItem mnemonicParsing="false" text="Close" />
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edit">
+        <MenuItem mnemonicParsing="false" text="Delete" />
+    </Menu>
+    <Menu mnemonicParsing="false" text="Icons">
+        <MenuItem mnemonicParsing="false">
+            <graphic>
+                <Hyperlink text="https://www.freepik.com" />
+            </graphic>
+        </MenuItem>
+    </Menu>
+</MenuBar>
+
+<!-- ADD LABEL -->
+    <Label layoutX="429.0" layoutY="95.0" text="MAZE GAME" textFill="WHITE">
+        <font>
+          <Font name="System Bold" size="37.0" />
+        </font>
+    </Label>
+
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.gameController">
+   <AnchorPane layoutX="-10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1099.0" style="-fx-background-color: #262626;">
+      <ImageView fx:id="rifleBTN" fitHeight="98.0" fitWidth="109.0" layoutX="27.0" layoutY="608.0" onMousePressed="#riflePressed" onMouseReleased="#rifleReleased" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/rifle.png" />
+      </ImageView>
+      <ImageView fx:id="swordBTN" fitHeight="98.0" fitWidth="98.0" layoutX="276.0" layoutY="608.0" onMousePressed="#swordPressed" onMouseReleased="#swordReleased" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/sword.png" />
+      </ImageView>
+      <ImageView fx:id="rpgBTN" fitHeight="98.0" fitWidth="109.0" layoutX="154.0" layoutY="608.0" onMousePressed="#rpgPressed" onMouseReleased="#rpgReleased" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/rpg.png" />
+      </ImageView>
+      <AnchorPane layoutX="757.0" layoutY="515.0">
+         <ImageView fx:id="leftBTN" fitHeight="98.0" fitWidth="109.0" layoutY="88.0" onMousePressed="#leftPressed" onMouseReleased="#leftReleased" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/left.png" />
+         </ImageView>
+         <ImageView fx:id="rightBTN" fitHeight="98.0" fitWidth="109.0" layoutX="178.0" layoutY="88.0" onMousePressed="#rightPressed" onMouseReleased="#rightReleased" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/right.png" />
+         </ImageView>
+         <ImageView fx:id="upBTN" accessibleRole="BUTTON" fitHeight="98.0" fitWidth="109.0" layoutX="92.0" onMousePressed="#upPressed" onMouseReleased="#upReleased" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/up.png" />
+         </ImageView>
+         <ImageView fx:id="downBTN" fitHeight="98.0" fitWidth="109.0" layoutX="92.0" layoutY="88.0" onMousePressed="#downPressed" onMouseReleased="#downReleased" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Images/down.png" />
+         </ImageView>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="500.0" layoutX="290.0" layoutY="76.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="500.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#43d9bd" height="76.0" layoutX="54.0" layoutY="140.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#43d9bd" height="76.0" layoutX="843.0" layoutY="140.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#515151" height="225.0" layoutX="843.0" layoutY="215.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="83.0" layoutY="164.0" text="LEADER BOARD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <VBox layoutX="383.0" layoutY="241.0" prefHeight="200.0" prefWidth="100.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#515151" height="225.0" layoutX="54.0" layoutY="214.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="878.0" layoutY="164.0" text="HOW TO PLAY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#43d9bd" height="56.0" stroke="BLACK" strokeType="INSIDE" width="1099.0" />
+      <Label layoutX="493.0" layoutY="14.0" text="MAZE GAME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="14.0" text="0:00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="clock" fitHeight="42.0" fitWidth="48.0" layoutX="24.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/clock.png" />
+      </ImageView>
+      <ImageView fx:id="money" fitHeight="42.0" fitWidth="48.0" layoutX="967.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/money.png" />
+      </ImageView>
+      <Label fx:id="playerWealth" layoutX="1024.0" layoutY="14.0" text="£0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="dropBTN" fitHeight="84.0" fitWidth="81.0" layoutX="426.0" layoutY="622.0" onMousePressed="#dropPressed" onMouseReleased="#dropReleased" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/drop.png" />
+      </ImageView>
+      <ImageView fx:id="pickupBTN" fitHeight="84.0" fitWidth="81.0" layoutX="540.0" layoutY="622.0" onMousePressed="#pickupPressed" onMouseReleased="#pickupReleased" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/pickup.png" />
+      </ImageView>
+      <Label fx:id="displayLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="333.0" layoutY="214.0" prefHeight="242.0" prefWidth="426.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+</AnchorPane>
