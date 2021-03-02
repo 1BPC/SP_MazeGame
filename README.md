@@ -1,7 +1,16 @@
 # SP_MazeGame
 
+The maze game has been written as a JavaFX Application 
 
-<h2>Set up</h2>
+- The user interface is defined inside an FXML document 
+- All of the logic to handle input events are inside the controller class
+
+<h3>Model-View-Controller Design Pattern</h3>
+
+![image](https://user-images.githubusercontent.com/62744819/109701944-83fd0580-7b8b-11eb-83c9-928954190e9e.png)
+
+
+<h1>Set up</h1>
 <ol>
   <li> Download and add the Javafx-sdk to project dependencies</li>
   https://www.oracle.com/java/technologies/install-javafx-sdk.html
@@ -13,8 +22,3 @@
   javafx.controls,javafx.fxml
 </code>
 </ol>
-
-<h2>Model-View-Controller Design</h2>
-
-![image](https://user-images.githubusercontent.com/62744819/109699821-f0c2d080-7b88-11eb-809a-449102846a6d.png)
-![image](https://user-images.githubusercontent.com/62744819/109699843-f5878480-7b88-11eb-8d64-cd797a313db3.png)
