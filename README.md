@@ -9,6 +9,7 @@ The maze game has been written as a JavaFX Application
 
 ![image](https://user-images.githubusercontent.com/62744819/109701944-83fd0580-7b8b-11eb-83c9-928954190e9e.png)
 
+![image](https://user-images.githubusercontent.com/62744819/109702258-e9e98d00-7b8b-11eb-8f9f-7248a0431ba9.png)
 
 <h1>Set up</h1>
 <ol>
